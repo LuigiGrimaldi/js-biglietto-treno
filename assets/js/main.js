@@ -18,4 +18,12 @@ console.log(howmanyKm);
 const userAge = prompt('età?');
 console.log(userAge);
 
-//
+//Costo per km
+let priceKm = 0.21;
+
+let x = myFunction(howmanyKm, priceKm);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
