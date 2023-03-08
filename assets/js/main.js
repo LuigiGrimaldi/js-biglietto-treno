@@ -27,3 +27,12 @@ document.getElementById("demo").innerHTML = x;
 function myFunction(a, b) {
   return a * b;
 }
+
+if (userAge <= 18) {
+    let priceKm = 0.17
+
+}else if(userAge >= 65){
+    let priceKm = 0.13
+}else {
+    let priceKm = 0.21
+}
