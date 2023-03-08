@@ -6,3 +6,16 @@
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 
+//prompt
+//console.log
+//if/else
+
+//chiedo all'utente quanti km vuole percorrere e console.log
+const howmanyKm = prompt('Quanti km si vogliono percorrere?');
+console.log(howmanyKm);
+
+//chiedo all'utente l'età e console.log
+const userAge = prompt('età?');
+console.log(userAge);
+
+//
