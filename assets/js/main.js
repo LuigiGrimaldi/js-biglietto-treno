@@ -19,31 +19,23 @@ const userAge = prompt('età?');
 console.log(userAge);
 
 //Costo per km
+let priceKm = 0.21
+let priceKm_under = 0.17
+let priceKm_over = 0.13
 
 if (userAge <= 18) {
-    let priceKm = 0.17
-    let x = myFunction(howmanyKm, priceKm);
-    document.getElementById("demo").innerHTML = x;
-
-    function myFunction(a, b) {
-        return a * b;
-    }
-
+    const tot = priceKm_under * howmanyKm;
+    console.log(tot);
 } else if (userAge >= 65) {
-    let priceKm = 0.13
-    let x = myFunction(howmanyKm, priceKm);
-    document.getElementById("demo").innerHTML = x;
-
-    function myFunction(a, b) {
-        return a * b;
-    }
+    const tot = priceKm_over * howmanyKm;
+    console.log(tot);
 } else {
-    let priceKm = 0.21
-    let x = myFunction(howmanyKm, priceKm);
-    document.getElementById("demo").innerHTML = x;
-
-    function myFunction(a, b) {
-        return a * b;
-    }
+    const tot = priceKm * howmanyKm;
+    console.log(tot);
 }
+
+// let result = document.getElementById('demo');
+// console.log(result);
+// result.innerHTML = 'Il costo del biglietto è: ' + tot + ' €';
+
 
