@@ -19,22 +19,31 @@ const userAge = prompt('età?');
 console.log(userAge);
 
 //Costo per km
-let priceKm = 0.21;
-
 
 
 if (userAge <= 18) {
-    let priceKm = 0.17
+    let priceKm_under = 0.17;
+    let x = myFunction(howmanyKm, priceKm_under);
+    document.getElementById("demo").innerHTML = x;
 
-}else if(userAge >= 65){
-    let priceKm = 0.13
-}else {
+    function myFunction(a, b) {
+        return a * b;
+    }
+
+} else if (userAge >= 65) {
+    let priceKm_over = 0.13
+    let x = myFunction(howmanyKm, priceKm_over);
+    document.getElementById("demo").innerHTML = x;
+
+    function myFunction(a, b) {
+        return a * b;
+    }
+} else {
     let priceKm = 0.21
-}
+    let x = myFunction(howmanyKm, priceKm);
+    document.getElementById("demo").innerHTML = x;
 
-let x = myFunction(howmanyKm, priceKm);
-document.getElementById("demo").innerHTML = x;
-
-function myFunction(a, b) {
-  return a * b;
+    function myFunction(a, b) {
+        return a * b;
+    }
 }
