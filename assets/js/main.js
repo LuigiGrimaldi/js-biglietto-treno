@@ -26,18 +26,21 @@ let priceKm_over = 0.13
 if (userAge <= 18) {
     let tot = priceKm_under * howmanyKm;
     console.log(tot);
+    document.getElementById('by').innerHTML = 'Il costo del biglietto è: ' + Math.round(Number(tot)) + ' €';
 } else if (userAge >= 65) {
     let tot = priceKm_over * howmanyKm;
     console.log(tot);
+    document.getElementById('by').innerHTML = 'Il costo del biglietto è: ' + Math.round(Number(tot)) + ' €';
 } else {
     let tot = priceKm * howmanyKm;
     console.log(tot);
+    document.getElementById('by').innerHTML = 'Il costo del biglietto è: ' + tot + ' €';
 }
 
 
-const result = document.getElementById('demo');
-console.log(result);
-result.innerHTML =  'Il costo del biglietto è: ' + tot + ' €'
+
+
+
 
 
 
